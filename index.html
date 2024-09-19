@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Santinho Virtual AR</title>
+    <title>Unity WebGL Player | Santinho AR att</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Santinho Virtual AR</div>
+        <div id="unity-build-title">Santinho AR att</div>
       </div>
     </div>
     <script>
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Demo Santinho.loader.js";
+      var loaderUrl = buildUrl + "/build nova.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Demo Santinho.data",
-        frameworkUrl: buildUrl + "/Demo Santinho.framework.js",
-        codeUrl: buildUrl + "/Demo Santinho.wasm",
+        dataUrl: buildUrl + "/build nova.data",
+        frameworkUrl: buildUrl + "/build nova.framework.js",
+        codeUrl: buildUrl + "/build nova.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Santinho AR att",
@@ -87,9 +87,9 @@
 
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
-        config.devicePixelRatio = 1;
+        // config.devicePixelRatio = 1;
 
-        //unityShowBanner('Para uma melhor experiência, utilize o navegador Google Chrome');
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
